@@ -60,4 +60,41 @@
 
 	<!--Pronto estare actualizando este nuevo sistema de HaxeFlixel-->
 
+	<!--____________________Update_N°2______________-->
+
+	<!--Esta es la actualizacion del sistema de commandos Custom de HaxeFlixel que permite el uso de varias
+	Funciones que estan creados por mi-->
+
+	<Custom_Variables name="LEFT" Moving="Left" />
+	<!--Etsa es la nueva Funcion de movimiento que permite mover archivo a un lugar en especifico con solo
+	escribir una variable esta variable se le pueden añadir efectos-->
+	<Custom_Variables name="LEFT" Moving="Left" Effect="Shake" />
+	<!--Estos effectos pueden afectar el rendimiento pero la opcion de Rendimiento y Optimizacion
+	lo arregla todo-->
+	<Custom_Variables name="LEFT" Moving="Left" Effect="Shake" Add="Rendimiento" />
+	<!--Esto es para añadir un effecto que no afecte el Rendimiento-->
+
+	<!--__Animations__-->
+	<Custom_Variables name="Transaccion" animation="move_gently" />
+	<!--En esta Funcion se añaden las animaciones estas sirven para el movimiento o las transacciones
+	estas necesitan tener una animacion de transaccion pero escribir nada mas esto no hara nada solo ejecuta
+	algo que no se ve necesita ponerle que se ejecute en un Objeto-->
+	<Custom_Variables name="Transaccion" animation="move_gently" Objet="Spr" Properties="_Animation_" />
+	<!--Aqui añadimos un objeto donde se ejecuta la animacion y añadimos una propiedad que le dice a el
+	Sistema que el Objeto es un Archivo de movimiento para evitar que pause la animacion del objeto por
+	añadir la transaccion-->
+
+	<!--Tengo muchas cosas que me gustaria añadir a esta funcion de animaciones por codigo-->
+
+	<!--__Sprites__-->
+	<Custom_Variables Sprites="assets/images/SpriteExample.Png" Moving="Center" Effect="Modulation" animation="move_gently"/>
+	<!--aqui lo que vemos es que añadimos un Sprite con su ubicacion despues movemos a el Centro añadimos un effecto
+	de Modulacion juento a una animacion de Move_gently todo esto hace que hagan una gran parte-->
+	<Custom_Variables Sprites="assets/images/SpriteExample.Png" Moving="Center" Effect="Modulation" animation="move_gently" Duration="00:00:10"/>
+	<!--Aqui le añadimos una duracion a la animacion de Move_gently para que no se ejecute de imediato ya que si hacemos eso
+	no se podra ver la animacion estas duraciones tienen que tener 00:00:10 [Hora|Minutos|segundos] si quieres añades
+	milisegundos 00:00:00/45 si añades un / se entenderan que quieres añadir los milisegundos-->
+
+	<!--Estare añadiendo pronto mas actualizaciones sobre este sistema de Custom Variable de HaxeFlixel-->
+
 </project>
