@@ -60,4 +60,70 @@
 
 	<!--Pronto estare actualizando este nuevo sistema de HaxeFlixel-->
 
+	<!--____________________Update_N°2______________-->
+
+	<!--Esta es la actualizacion del sistema de commandos Custom de HaxeFlixel que permite el uso de varias
+	Funciones que estan creados por mi-->
+
+	<Custom_Variables name="LEFT" Moving="Left" />
+	<!--Etsa es la nueva Funcion de movimiento que permite mover archivo a un lugar en especifico con solo
+	escribir una variable esta variable se le pueden añadir efectos-->
+	<Custom_Variables name="LEFT" Moving="Left" Effect="Shake" />
+	<!--Estos effectos pueden afectar el rendimiento pero la opcion de Rendimiento y Optimizacion
+	lo arregla todo-->
+	<Custom_Variables name="LEFT" Moving="Left" Effect="Shake" Add="Rendimiento" />
+	<!--Esto es para añadir un effecto que no afecte el Rendimiento-->
+
+	<!--__Animations__-->
+	<Custom_Variables name="Transaccion" animation="move_gently" />
+	<!--En esta Funcion se añaden las animaciones estas sirven para el movimiento o las transacciones
+	estas necesitan tener una animacion de transaccion pero escribir nada mas esto no hara nada solo ejecuta
+	algo que no se ve necesita ponerle que se ejecute en un Objeto-->
+	<Custom_Variables name="Transaccion" animation="move_gently" Objet="Spr" Properties="_Animation_" />
+	<!--Aqui añadimos un objeto donde se ejecuta la animacion y añadimos una propiedad que le dice a el
+	Sistema que el Objeto es un Archivo de movimiento para evitar que pause la animacion del objeto por
+	añadir la transaccion-->
+
+	<!--Tengo muchas cosas que me gustaria añadir a esta funcion de animaciones por codigo-->
+
+	<!--__Sprites__-->
+	<Custom_Variables Sprites="assets/images/SpriteExample.Png" Moving="Center" Effect="Modulation" animation="move_gently"/>
+	<!--aqui lo que vemos es que añadimos un Sprite con su ubicacion despues movemos a el Centro añadimos un effecto
+	de Modulacion juento a una animacion de Move_gently todo esto hace que hagan una gran parte-->
+	<Custom_Variables Sprites="assets/images/SpriteExample.Png" Moving="Center" Effect="Modulation" animation="move_gently" Duration="00:00:10"/>
+	<!--Aqui le añadimos una duracion a la animacion de Move_gently para que no se ejecute de imediato ya que si hacemos eso
+	no se podra ver la animacion estas duraciones tienen que tener 00:00:10 [Hora|Minutos|segundos] si quieres añades
+	milisegundos 00:00:00/45 si añades un / se entenderan que quieres añadir los milisegundos-->
+
+	<!--Estare añadiendo pronto mas actualizaciones sobre este sistema de Custom Variable de HaxeFlixel-->
+
+
+	<!--____________________Update_N°3______________-->
+
+	<!--Esta es la actualizacion del sistema de commandos Custom de HaxeFlixel que permite el uso de varias
+	Funciones que estan creados por mi-->
+
+	<Custom_Variables coordinates="0,0" AddText="Ejemplo previo" opacity="0.5" Duration="00:00:70/20" />
+	<!--aqui vemos las cordenadad que se usas en 0,0 [x,y] si necesitas mas pues crea es con una * que 
+	hace que todo el sistema te permita utilizar el width y el height haci "0,0*-20*-10" el uso de Addtext
+	haxe que se cree un texto con formato "Ariel" Opacity es la opacidad que si pones 1 estara normal 
+	0:0 si quieres una opcidad detallada pon un / como en la Duracion [0:7/4]-->
+
+	<!--__Animations__-->
+	<Custom_Variables name="Pase_de_Pagina" animation="Page_Move.bat" Duration="00:00:05/30" />
+	<!--aqui vemos como las animaciones tuvieron una actualizacion que ahora se añaden ahora con un archivo
+	.bat que es ejecutando [lime add animation] con una animacion añadida haci no es necesario la optimizacion-->
+
+	<!--Lightning-->
+	<Custom_Variables Sprites="assets/images/SpriteExample.Png" Moving="Center" Effect="Modulation" animation="move_gently.bat"
+								Lightning="1" smoothness="20"/>
+	<!--Aqui añadimos un Sprite con su ubicacion despues movemos a el Centro añadimos un effecto
+	de Modulacion juento a una animacion de Move_gently todo esto hace que hagan una gran parte
+	despues añadimos una Iluminacion y una suavidad en la ilumnacion ponemos de 0 al 5% y la suavidad del 0% al 100%
+	entre mas suvidad mas borrosa se vuelve la imagen-->
+
+	<!--estare pronto actualizando este sistema que esta llevando un buen rumbo ya que le añade mas funciones
+	de creacion a HaxeFlixel-->
+
+
 </project>
