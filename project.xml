@@ -30,15 +30,34 @@
 
 	<Access_Totality name="Access_Totality_Libraries" />
 
-	<!--Listo el resto ya esta en mi Pc-->
+	<!--Las Variables Custom Iniciales-->
 
-	<!--_________________Create_Custom_Command__________________-->
+	<Custom_Variables name="" />
+	<!--El uso de Custom_Variable hace que busque en las primera librerias-->
+	<Custom_Variables name="Not_Use_Numbers" />
+	<!--el poner el nombre hace que todo se agrege-->
+	<Custom_Variables name="Not_Use_Numbers" Function=""/>
+	<!--La variable Funcion hace que digas que funcion va a tener-->
+	<Custom_Variables name="Not_Use_Numbers" Function="NotAllowNumbers" />
+	<!--El sistema entiede al poner Not que es que no quieres que Allow permitas Numbers los numeros
+	Al escribir esto el sistema entiende que no quieres permitir los nuemros-->
+	<Custom_Variables name="Thanks all 23" if="Not_Use_Numbers" />
+	<!--El sistema entiende que si la variable Not_Use_Numbers esta activa entonces el sistema no permite
+	que se use el numero 23 y lo que aparece es "Thanks all" sin el numero 23-->
+	<Custom_Variables name="Not_Capital_letters" Function="NotAllowCapital_letters" + Function2="change_to_lowercase"  />
+	<!--Aqui lo que pasa es que se crea la variable y su respectiva funcion pero se añade una 2 Funcion que
+	es Cambiar a Minuscula porque el sistema entiende con la palabra change y lowercase es que quieres cambiar
+	a minuscula tambien vemos que no quiere permitir Mayusculas-->
+	<Custom_Variables name="ESTO NO SE VE esto si se ve" if="Not_Capital_letters"  />
+	<!--El sistema entiende que si la variable Not_Capital_letters esta activa entonces el sistema no permite
+	que se use las mayusculas y lo que aparece es "esto si se ve" sin las mayusculas-->
 
-	<!--Esto te va permitir poder crear comandos personalizados-->
-	<!--Solo si es un comando avanzado necesitaras de una libreria-->
-	<!--Los comandos no pueden ser largos sin librerias solo podras crear cortos-->
-	<!--Estos comando solo los e configurado para Windows estare mejorando poco a poco-->
-	<!--La variedad de variables que se pueden usar estaran en -->
 
-	<Create_Custom_Command name="" />
+	<!--Todo esto se puede aplicar en los codes pero utilizando el # ejemplo #if Not_Use_Numbers pero durante
+	el Codigo no en el inicio o en el Final ya que las confunde con las otras recuerda que esta funcion de
+	Variables solo Funcionan en mi Source Code ya que yo los añado a el codigo pero en un archivo de
+	libreria que esta en beta Todavias--> 
+
+	<!--Pronto estare actualizando este nuevo sistema de HaxeFlixel-->
+
 </project>
