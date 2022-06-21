@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+<!--_________________Custom_Variable_libraries_________________-->
+
+<Customlib name="Customlib" path="Customlib.cs" />
+<Customlib name="Customlib2" path="Customlib2.cs" />
+<Customlib name="Customlib3" path="Customlib3.cs" />
+<Customlib name="Customlib4" path="Customlib4.cs" />
+<Customlib name="Customlib5" path="Customlib5.cs" />
+
+<Customlib name="CustomlibNew" path="CustomlibNew.cs" />
+<Customlib name="CustomlibNew2" path="CustomlibNew2.cs" />
+<Customlib name="CustomlibNew3" path="CustomlibNew3.cs" />
+<Customlib name="CustomlibNew4" path="CustomlibNew4.cs" />
+<Customlib name="CustomlibNew5" path="CustomlibNew5.cs" />
+
+<Customlib name="Sistemlib" path="Sistemlib.cs" if="desktop"/>
+
+<Customlib name="Sistemlib" path="SistemlibMobile.apk" if="mobile"/>
+
+<Customlib name="Sistemlib" path="SistemlibSwitch.cs" if="console"/>
+
+<!--_________________Custom_Variable_libraries_Debug_________________-->
+
+<Customlib loaded="true" Network="True" />
+<Customlib loading=":C/Server/Customlibs/debug/Aparence/debug.Cus"/>
+
+<Customlibdebug name="CustomDebug" path="Debuglib.cs"/>
+
+#if debug
+<debugMode Sprite=":C/Server/Customlibs/debug/Aparence/Bottons.png" animation="Buttons.bat" moving="Moving.xml"/>
+<debugMode name="Actions" Funtion="Edits_Commands"/>
+<debugMode name="Admins" if="Actions"/>
+<debugMode console="Allowed_Edits" if="Admins"
+#End
+
+<!--_______________________Custom_Commands_advanced__________________-->
+
+<!--________________Como Crear tu Propia Variable__________________-->
+<!--Ahora mira bien con esdto podras crear tu propia Variable-->
+<CustomCommand rename="" />
+<!--En el espacio de rename podras cambiar el nombre de "CustomCommand" al escribir un nombre todas las funciones
+se quitan y no queda nada-->
+<CustomCommand rename="CommandFull" />
+<!--Al escribir el nuevo nombre tendras que escribir "lime update CommandsCustom" y se añadira todo de la misma forma
+se quitaran las Funciones-->
+<CommandFull/> <!--Este es el nombre de la Nueva Funcion--> <!--Si utilizas alguna antigua funcion te dara error-->
+
+<!--Tambien debemos tener en cuenta que tenemos acceso completo a la consola si quieres que solo tu
+puedas editar eso escribe [#if Admins] para que solo tu puedas editar esa parte-->
+
+<[Note]> Este es un comentario de nota esto permite que te puedas comentar en el codigo sin que de errores
+</> Esto es para que no te de errores a la hora de escribir un comentario seguido aparte de una nota
+</> Hay que tener en cuenta que tabien existen otros tipos de comentarios con los que puedes comentar mas
+</> Facil y Rapido pero este es para los CustomCommand ya que da errores aveces con otros comentarios <![Note]>
+
+<!--_______________Como Crear Servidores____________-->
+
+<CommandsCustom name="Server1" />
+<[Note]> Pimero creamos el nombre de este Servidor debes tener en Cuenta que estos servidores son muy inestables
+</> Por lo tanto no se recomienda que uses estos servidores para jugar si no para Crear Estadisticas del Juego
+</> Si quieres crear un servidor para jugar debes Crear un Servidor Estable de Juego <![Note]>
+<CreateServers GPS="USA" if="Server1" />
+<[Note]> Ahora ponemos la variable que hace que esto se logre y escribimos "GPS" y la ubicacion que quieres
+</> Donde se ubique el servidor te recomiendo que uses las mas cercana a tu ubicacion en mi caso USA <![Note]>
+<CreateServers GPS="USA" if="Server1" Permiss="Allow_Testing"/>
+<[Note]> Añadimos un permiss que les otorga el acceso a tal funcion en este caso el testeo de los servidores <![Note]>
+<!--Terminal-->
+<(:C/Server/CustomCommands:   )> <!--Aqui estamos en la terminal estare escribiendo todo lo que pasa-->
+<(:C/Server/CustomCommands: lime testing server)> <!--Has todo lo que estoy haciendo [Cuando se pueda descargar ya que esta en beta estos Commandos]-->
+<(testing server....)>
+<(Selecting server
+  °Server1
+  °None)>
+<(:C/Server/CustomCommands: Server1)>
+<(loading server....)>
+<(Server loaded)>
+<(...)>
+<(Testing 40%...)>
+<(Testing 60%...)>
+<(Testing 80%...)>              <[Note]> Este Proseso es muy Lento pero es para que se pueda ver el proceso de Carga
+<(Testing 100%...)>
+<(Testing Finished)>
+<(Statistics:
+lagging: 60-80 Ping
+IP Port: 000.000.0.0
+Network Band: 2.4 GHz
+Ip Server: 000.000.00.000
+           000.000.000.000
+name: Server1)>
+
+<!--Terminal_End-->
+
+<!--Como vemos el servidor tiene buenos Resultados pero el nombre debe ser cambiado porque se puede llegar
+a Confundir con otros servers IP sale pero no mostrare el IP que se muestra porque son datos que no dben ser
+Mostrados la latencia depende de la ubicacion y estamos hablando de que estoy sola yo en esta Red a ustedes si
+escogen USA les de 120-140 de Ping-->
+
+<Link Url="https://github.com/CamelyGamer20/Servers_List"/>
+<!--Para ver la lista de servidores que se pueden crear visita nuestro repositorio en Github-->
+
+<!--_____________________Coming Soom______________________-->
+<!--Update #2-->
+</project>
