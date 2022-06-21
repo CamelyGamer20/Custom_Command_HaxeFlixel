@@ -13,6 +13,8 @@
 <Customlib name="CustomlibNew3" path="CustomlibNew3.cs" />
 <Customlib name="CustomlibNew4" path="CustomlibNew4.cs" />
 <Customlib name="CustomlibNew5" path="CustomlibNew5.cs" />
+  
+<Customlib name="ServersCreatedlib" path="Serverlib.index" />
 
 <Customlib name="Sistemlib" path="Sistemlib.cs" if="desktop"/>
 
